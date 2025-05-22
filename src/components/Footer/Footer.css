@@ -1,0 +1,88 @@
+.footer {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  padding: 20px 40px;
+  border-top: 2px solid #ddd;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 1s ease-in;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Sexy copyright gradient */
+.copyright {
+  font-size: 1rem;
+  background: linear-gradient(90deg, #5b4751, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  animation: floatY 4s ease-in-out infinite alternate;
+}
+
+.name-gradient {
+  background: linear-gradient(45deg, #0d0d0d, #725d74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Icons */
+.footer-right a {
+  color: #111;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-right a:hover {
+  transform: translateY(-3px) scale(1.2);
+  color: #67453f;
+}
+
+/* Contact text */
+.contact h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.contact:hover h4 {
+  color: #746658;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Animations */
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
